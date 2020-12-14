@@ -1,6 +1,9 @@
 # Specify a base image
 FROM node:alpine
 
+# Choosing a working directory inside node
+WORKDIR /usr/app
+
 # Install some dependencies
 COPY ./ ./
 RUN npm install
